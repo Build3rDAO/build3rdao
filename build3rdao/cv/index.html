@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build3rDAO | Curriculum Vitae</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Print Styles -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    
+    <!-- Back to Portfolio -->
+    <a href="index.html" class="back-to-portfolio">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="cv-container">
+        <div class="container">
+            <!-- CV Header with Print/Download Controls -->
+            <div class="cv-header">
+                <div class="cv-actions">
+                    <button id="printCV" class="btn btn-outline">
+                        <i class="fas fa-print"></i> Print CV
+                    </button>
+                    <button id="downloadPDF" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                    <button id="toggleCompact" class="btn btn-secondary">
+                        <i class="fas fa-compress"></i> Compact View
+                    </button>
+                </div>
+                
+                <!-- Personal Info Header -->
+                <div class="personal-header">
+                    <div class="personal-info">
+                        <h1 class="cv-name">Build3rDAO</h1>
+                        <h2 class="cv-title">Senior Web3 & Blockchain Developer</h2>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>build3rdao@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/build3rdao</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-twitter"></i>
+                                <span>twitter.com/build3rdao</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <span>build3rdao.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- QR Code for Digital CV -->
+                    <div class="qr-code">
+                        <div class="qr-container">
+                            <canvas id="qrCanvas"></canvas>
+                        </div>
+                        <p>Scan to view digital portfolio</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CV Content Grid -->
+            <div class="cv-grid">
+                <!-- Left Column -->
+                <div class="cv-left">
+                    <!-- Summary -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-user"></i> Professional Summary
+                        </h3>
+                        <div class="section-content">
+                            <p>Senior Web3 developer with 4+ years of experience building decentralized applications, smart contracts, and blockchain solutions. Specialized in Ethereum ecosystem, DeFi protocols, NFT marketplaces, and DAO governance systems. Passionate about security, scalability, and user experience in decentralized applications.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- Skills -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-code"></i> Technical Skills
+                        </h3>
+                        <div class="section-content">
+                            <div class="skills-categories">
+                                <div class="skill-category">
+                                    <h4>Smart Contracts</h4>
+                                    <div class="skill-items">
+                                        <span class="skill-item">Solidity</span>
+                                        <span class="skill-item">Vyper</span>
+                                        <span class="skill-item">Hardhat</span>
+                                        <span class="skill-item">Foundry</span>
+                                        <span class="skill-item">Truffle</span>
+                                        <span class="skill-item">OpenZeppelin</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h4>Blockchain</h4>
+                                    <div class="skill-items">
+                                        <span class="skill-item">Ethereum</span>
+                                        <span class="skill-item">Polygon</span>
+                                        <span class="skill-item">Avalanche</span>
+                                        <span class="skill-item">Arbitrum</span>
+                                        <span class="skill-item">Optimism</span>
+                                        <span class="skill-item">Chainlink</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h4>Frontend</h4>
+                                    <div class="skill-items">
+                                        <span class="skill-item">React/Next.js</span>
+                                        <span class="skill-item">Vue.js</span>
+                                        <span class="skill-item">Web3.js</span>
+                                        <span class="skill-item">ethers.js</span>
+                                        <span class="skill-item">Wagmi</span>
+                                        <span class="skill-item">TypeScript</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h4>Backend & Tools</h4>
+                                    <div class="skill-items">
+                                        <span class="skill-item">Node.js</span>
+                                        <span class="skill-item">The Graph</span>
+                                        <span class="skill-item">IPFS</span>
+                                        <span class="skill-item">Docker</span>
+                                        <span class="skill-item">Git</span>
+                                        <span class="skill-item">CI/CD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Certifications -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-certificate"></i> Certifications
+                        </h3>
+                        <div class="section-content">
+                            <div class="certification">
+                                <h4>Certified Ethereum Developer</h4>
+                                <div class="cert-info">
+                                    <span class="cert-issuer">Ethereum Foundation</span>
+                                    <span class="cert-date">2023</span>
+                                </div>
+                            </div>
+                            <div class="certification">
+                                <h4>Smart Contract Security Auditor</h4>
+                                <div class="cert-info">
+                                    <span class="cert-issuer">ConsenSys Academy</span>
+                                    <span class="cert-date">2022</span>
+                                </div>
+                            </div>
+                            <div class="certification">
+                                <h4>Blockchain Architecture Professional</h4>
+                                <div class="cert-info">
+                                    <span class="cert-issuer">Blockchain Council</span>
+                                    <span class="cert-date">2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Languages -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-language"></i> Languages
+                        </h3>
+                        <div class="section-content">
+                            <div class="language">
+                                <span class="lang-name">English</span>
+                                <div class="lang-level">Native</div>
+                            </div>
+                            <div class="language">
+                                <span class="lang-name">Spanish</span>
+                                <div class="lang-level">Professional</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="cv-right">
+                    <!-- Experience -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-briefcase"></i> Work Experience
+                        </h3>
+                        <div class="section-content">
+                            <div class="experience">
+                                <div class="experience-header">
+                                    <h4>Senior Web3 Developer</h4>
+                                    <div class="experience-meta">
+                                        <span class="company">Decentral Labs</span>
+                                        <span class="duration">2022 - Present</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Led development of DeFi protocol with $50M+ TVL</li>
+                                    <li>Architected and audited 15+ smart contracts</li>
+                                    <li>Reduced gas costs by 40% through optimization</li>
+                                    <li>Implemented DAO governance with snapshot voting</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="experience">
+                                <div class="experience-header">
+                                    <h4>Blockchain Engineer</h4>
+                                    <div class="experience-meta">
+                                        <span class="company">CryptoVault</span>
+                                        <span class="duration">2021 - 2022</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Built NFT marketplace with 10k+ monthly users</li>
+                                    <li>Developed cross-chain bridge for asset transfer</li>
+                                    <li>Implemented multi-signature wallet security</li>
+                                    <li>Created gasless transaction system</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="experience">
+                                <div class="experience-header">
+                                    <h4>Smart Contract Developer</h4>
+                                    <div class="experience-meta">
+                                        <span class="company">ChainSafe Solutions</span>
+                                        <span class="duration">2020 - 2021</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Developed ERC-20 and ERC-721 token contracts</li>
+                                    <li>Conducted security audits for clients</li>
+                                    <li>Built staking and yield farming protocols</li>
+                                    <li>Created educational content for Web3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Education -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h3>
+                        <div class="section-content">
+                            <div class="education">
+                                <div class="education-header">
+                                    <h4>M.Sc. Computer Science</h4>
+                                    <div class="education-meta">
+                                        <span class="institution">Stanford University</span>
+                                        <span class="duration">2018 - 2020</span>
+                                    </div>
+                                </div>
+                                <p class="education-details">Specialization in Cryptography & Distributed Systems</p>
+                            </div>
+                            
+                            <div class="education">
+                                <div class="education-header">
+                                    <h4>B.Sc. Software Engineering</h4>
+                                    <div class="education-meta">
+                                        <span class="institution">MIT</span>
+                                        <span class="duration">2014 - 2018</span>
+                                    </div>
+                                </div>
+                                <p class="education-details">Minor in Mathematics, GPA: 3.9/4.0</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Projects -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-project-diagram"></i> Key Projects
+                        </h3>
+                        <div class="section-content">
+                            <div class="project">
+                                <h4>DeFi Yield Optimizer Protocol</h4>
+                                <p class="project-desc">Multi-chain yield farming aggregator with $20M+ TVL</p>
+                                <div class="project-tech">
+                                    <span>Solidity</span>
+                                    <span>React</span>
+                                    <span>Chainlink</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project">
+                                <h4>NFT Marketplace Platform</h4>
+                                <p class="project-desc">Gasless NFT marketplace with 50k+ registered users</p>
+                                <div class="project-tech">
+                                    <span>ERC-721</span>
+                                    <span>Next.js</span>
+                                    <span>IPFS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project">
+                                <h4>DAO Governance System</h4>
+                                <p class="project-desc">Complete DAO platform with quadratic voting</p>
+                                <div class="project-tech">
+                                    <span>Governance</span>
+                                    <span>Subgraph</span>
+                                    <span>Snapshot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- References -->
+                    <section class="cv-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-users"></i> References
+                        </h3>
+                        <div class="section-content">
+                            <div class="reference">
+                                <h4>Alex Johnson</h4>
+                                <p class="reference-title">CTO, Decentral Labs</p>
+                                <p class="reference-contact">alex@decentral.com</p>
+                            </div>
+                            <div class="reference">
+                                <h4>Sarah Chen</h4>
+                                <p class="reference-title">Founder, CryptoVault</p>
+                                <p class="reference-contact">sarah@cryptovault.io</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- CV Footer -->
+            <div class="cv-footer">
+                <div class="cv-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Last Updated: <span id="currentDate">Loading...</span></span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-file"></i>
+                        <span>CV Version: 2.1</span>
+                    </div>
+                </div>
+                
+                <div class="cv-disclaimer">
+                    <p><i class="fas fa-info-circle"></i> This CV is digitally signed and timestamped on the blockchain.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cv.js"></script>
+</body>
+</html>

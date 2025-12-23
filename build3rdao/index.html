@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build3rDAO | Web3 Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Build3rDAO - Professional Web3 developer specializing in smart contracts, DApps, and decentralized solutions. Ethereum, Solidity, React, and blockchain development.">
+    <meta name="keywords" content="Web3, blockchain, smart contracts, Solidity, Ethereum, DApp, developer, Build3rDAO">
+    <meta name="author" content="Build3rDAO">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Build3rDAO | Web3 Developer Portfolio">
+    <meta property="og:description" content="Building secure, scalable blockchain solutions with cutting-edge Web3 technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://build3rdao.com">
+    <meta property="og:image" content="https://build3rdao.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@build3rdao">
+    <meta name="twitter:title" content="Build3rDAO | Web3 Developer Portfolio">
+    <meta name="twitter:description" content="Professional Web3 developer building decentralized future.">
+    <meta name="twitter:image" content="https://build3rdao.com/assets/images/twitter-card.jpg">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Oxanium:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span style="color:white">Build3rDAO</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#home" style="color:white">Home</a>
+                    <a href="#about" style="color:white">About</a>
+                    <a href="#skills" style="color:white">Skills</a>
+                    <a href="#projects" style="color:white">Projects</a>
+                    <a href="#testimonials" style="color:white">Testimonials</a>
+                    <a href="#contact" style="color:white">Contact</a>
+                    <a href="https://x.com/Buil3rDAO" target="_blank" class="twitter-btn" aria-label="Twitter Profile">
+                        <i class="fab fa-twitter" style="color:white"></i>@build3rdao
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" >
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#about" class="mobile-nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                    <a href="#skills" class="mobile-nav-link">
+                        <i class="fas fa-code"></i> Skills
+                    </a>
+                    <a href="#projects" class="mobile-nav-link">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                    <a href="#testimonials" class="mobile-nav-link">
+                        <i class="fas fa-comment"></i> Testimonials
+                    </a>
+                    <a href="#contact" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="tagline">
+                            <span class="tag">Web3 Developer</span>
+                            <span class="tag">Smart Contracts</span>
+                            <span class="tag">DApps</span>
+                            <span class="tag">Blockchain</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Building the Future of 
+                            <span class="gradient-text">Decentralized Web</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            I create secure, scalable blockchain solutions with cutting-edge Web3 technologies.
+                            Specialized in Ethereum, Solidity, and full-stack DApp development.
+                        </p>
+                        
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> Contact Me
+                            </a>
+                            <a href="assets/youseef.pdf" class="btn btn-outline" download="Build3rDAO_Resume.pdf">
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://github.com/build3rdao" target="_blank" class="social-link" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/Buil3rDAO" target="_blank" class="social-link" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/build3rdao" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://discord.gg/build3rdao" target="_blank" class="social-link" aria-label="Discord Server">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://t.me/build3rdao" target="_blank" class="social-link" aria-label="Telegram Channel">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Developer Image Section -->
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <!-- Add your image here: Save as assets/images/developer.jpg -->
+                            <img src="assets/images/developer.jpeg" 
+                                 alt="Web3 Developer" 
+                                 class="developer-img" 
+                                 loading="lazy"
+                                 onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%231a1d3a%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2300d4ff%22 font-family=%22Arial%22 font-size=%2232%22>Your Photo</text></svg>'">
+                            <div class="image-frame"></div>
+                            <div class="image-glow"></div>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                <span style="color:white">Available for Work</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack Badges -->
+                        <div class="tech-stack">
+                            <div class="tech-item" data-tooltip="Ethereum Smart Contracts">
+                                <i class="fab fa-ethereum"></i>
+                                <span style="color:white">Ethereum</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="Solidity Development">
+                                <i class="fas fa-file-contract"></i>
+                                <span style="color:white">Solidity</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="React/Next.js DApps">
+                                <i class="fab fa-react"></i>
+                                <span style="color:white">React</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="Node.js Backend">
+                                <i class="fas fa-server"></i>
+                                <span style="color:white">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <a href="#about" class="scroll-down" aria-label="Scroll to next section">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate Web3 developer building decentralized solutions</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Hello, I'm a Web3 Developer</h3>
+                        <p>
+                            With over 3 years of experience in blockchain development, I specialize in creating 
+                            secure smart contracts and intuitive decentralized applications. My expertise spans 
+                            across Ethereum ecosystem, DeFi protocols, NFT marketplaces, and DAO governance systems.
+                        </p>
+                        
+                        <div class="experience-stats">
+                            <div class="stat">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Smart Contracts</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">DApps Built</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Security Focus</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Blockchain Networks</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>Remote · Global</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>build3rdao@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <strong>Availability</strong>
+                                    <p>Open for Projects</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-code-branch"></i>
+                                <div>
+                                    <strong>Experience</strong>
+                                    <p>3+ Years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Progress -->
+                    <div class="skills-progress">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Solidity Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>DApp Architecture</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Security Auditing</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Web3 Integration</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>DeFi Protocols</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Comprehensive Web3 development expertise</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-ethereum"></i>
+                        </div>
+                        <h3>Smart Contracts</h3>
+                        <ul class="skill-list">
+                            <li>Solidity & Vyper</li>
+                            <li>Hardhat & Truffle</li>
+                            <li>ERC Standards</li>
+                            <li>Security Audits</li>
+                            <li>Foundry & Brownie</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>DApp Development</h3>
+                        <ul class="skill-list">
+                            <li>React/Next.js</li>
+                            <li>Web3.js & ethers.js</li>
+                            <li>The Graph & IPFS</li>
+                            <li>Wallet Integration</li>
+                            <li>Web3 Auth</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security</h3>
+                        <ul class="skill-list">
+                            <li>Smart Contract Audits</li>
+                            <li>Penetration Testing</li>
+                            <li>Gas Optimization</li>
+                            <li>Best Practices</li>
+                            <li>Formal Verification</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Frameworks</h3>
+                        <ul class="skill-list">
+                            <li>Foundry & Brownie</li>
+                            <li>OpenZeppelin</li>
+                            <li>Alchemy & Infura</li>
+                            <li>Polygon & Avalanche</li>
+                            <li>Chainlink Oracles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world Web3 solutions I've built</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-badge">Live on Mainnet</div>
+                        <div class="project-image">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>DeFi Yield Optimizer</h3>
+                            <p>Automated yield farming protocol that rebalances positions across multiple chains for maximum returns with risk management.</p>
+                            <div class="project-tech">
+                                <span>Solidity</span>
+                                <span>React</span>
+                                <span>Hardhat</span>
+                                <span>Chainlink</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-users"></i> 1.2k Users</span>
+                                <span><i class="fas fa-code-branch"></i> v2.1.0</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/build3rdao/defi-yield-optimizer" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://yield.build3rdao.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-badge">Multi-chain</div>
+                        <div class="project-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>NFT Marketplace</h3>
+                            <p>Complete NFT platform with gasless transactions, royalty enforcement, cross-chain support, and creator tools.</p>
+                            <div class="project-tech">
+                                <span>ERC-721</span>
+                                <span>Next.js</span>
+                                <span>IPFS</span>
+                                <span>Polygon</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-image"></i> 5k+ NFTs</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasless</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/build3rdao/nft-marketplace" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://nft.build3rdao.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-badge">DAO Platform</div>
+                        <div class="project-image">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>DAO Governance</h3>
+                            <p>Complete DAO platform with proposal creation, quadratic voting, treasury management, and cross-chain governance.</p>
+                            <div class="project-tech">
+                                <span>Governance</span>
+                                <span>Vue.js</span>
+                                <span>Subgraph</span>
+                                <span>Snapshot</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-users"></i> 500+ DAOs</span>
+                                <span><i class="fas fa-vote-yea"></i> 10k+ Votes</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/build3rdao/dao-governance" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://dao.build3rdao.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p class="section-subtitle">What collaborators say about working with me</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Build3rDAO delivered a flawless DeFi protocol that exceeded our expectations. Their attention to security and gas optimization saved us thousands in transaction fees."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Alex Johnson" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Alex Johnson</h4>
+                                <p>CTO, DeFi Protocols Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The NFT marketplace they built for us handles thousands of transactions daily without a hitch. Professional, communicative, and highly skilled."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="Sarah Chen" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Sarah Chen</h4>
+                                <p>Founder, ArtVerse NFT</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Build3rDAO's DAO implementation transformed our community governance. Their understanding of tokenomics and voting mechanisms is exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus" alt="Marcus Rivera" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Marcus Rivera</h4>
+                                <p>DAO Lead, Web3 Collective</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's build something amazing together</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>build3rdao@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div>
+                                <h4>Twitter</h4>
+                                <p>@build3rdao</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Remote · Global</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm"  action="https://formspree.io/f/xlgrpgve" method="POST">
+                            <!-- Honeypot field for spam prevention -->
+                            <div class="form-group" style="display: none;">
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" name="email">Your Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="projectType">Project Type <span class="required">*</span></label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="smart-contract">Smart Contract Development</option>
+                                    <option value="dapp">DApp Development</option>
+                                    <option value="defi">DeFi Protocol</option>
+                                    <option value="nft">NFT Marketplace</option>
+                                    <option value="dao">DAO Governance</option>
+                                    <option value="audit">Security Audit</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget (Optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="" selected>Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-30k">$15,000 - $30,000</option>
+                                    <option value="30k-50k">$30,000 - $50,000</option>
+                                    <option value="50k-plus">$50,000+</option>
+                                    <option value="tbd">To be discussed</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details <span class="required">*</span></label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and requirements..." rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="nda" name="nda">
+                                    <span>I require an NDA before sharing detailed information</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Form Status Messages -->
+                            <div id="formStatus" class="form-status"></div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <i class="fas fa-cube"></i>
+                        <span>Build3rDAO</span>
+                    </a>
+                    <p>Building the decentralized future, one smart contract at a time.</p>
+                    <div class="footer-cta">
+                        <a href="#contact" class="btn btn-outline">Start a Project</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <a href="#contact">Smart Contract Dev</a>
+                    <a href="#contact">DApp Development</a>
+                    <a href="#contact">Security Audits</a>
+                    <a href="#contact">DAO Implementation</a>
+                    <a href="#contact">Consulting</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/Buil3rDAO" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/build3rdao" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/build3rdao" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://discord.gg/build3rdao" target="_blank" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Stay Updated</h5>
+                        <form id="newsletterForm">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" aria-label="Subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Build3rDAO. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
